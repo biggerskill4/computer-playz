@@ -47,7 +47,7 @@
 /* categories card */
 .categories {
     width: 100%;
-    padding: 30px 10px;
+    padding: 60px 10px 30px;
 }
 
 .categories .row {
@@ -110,3 +110,172 @@
 }
 
 /* End Product Grid */
+
+
+/* New Updates */
+.newUpdates {
+    width: 100%;
+    padding: 10px 10px 30px;
+}
+
+.newUpdates .row {
+    width: var(--max-width);
+    gap: 20px;
+}
+
+.newUpdates .myColumn {
+    width: 100%;
+    height: 400px;
+    background: var(--color-one);
+    border-radius: 20px;
+    padding: 30px;
+    color: var(--color-two);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.newUpdates .myColumn h3 {
+    font-size: 30px;
+}
+
+.newUpdates .myColumn.left {
+    background-image: url(../images/left.webp);
+}
+
+.newUpdates .myColumn.right {
+    background-image: url(../images/right.webp);
+}
+
+.newUpdates .myColumn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1e5ab586;
+    backdrop-filter: blur(5px);
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.newUpdates .myColumn:hover::before {
+    background: #1e5ab5c7;
+    backdrop-filter: blur(10px);
+}
+
+/* End New Updates */
+
+
+/* Product */
+
+.productGridContainer {
+    width: 100%;
+    padding: 30px 10px;
+}
+
+.productGridContainer .row {
+    flex-direction: column;
+    width: var(--max-width);
+    gap: 30px;
+}
+
+.productGridContainer .productGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.productGrid .productCard {
+    width: calc(25% - 15px);
+}
+
+@media (max-width: 1024px) {
+    .productGrid .productCard {
+        width: calc(33.333% - 15px);
+    }
+}
+
+@media (max-width: 768px) {
+    .productGrid .productCard {
+        width: calc(50% - 15px);
+    }
+}
+
+@media (max-width: 480px) {
+    .productGrid .productCard {
+        width: 100%;
+    }
+}
+
+
+/* End Product */
+
+/* Faqs */
+
+.faqs {
+    width: 100%;
+    padding: 30px 10px;
+}
+
+.faqs .row {
+    flex-direction: column;
+    width: var(--max-width);
+    gap: 30px;
+}
+
+.faqAccordian {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #00000034;
+    transition: all 0.3s;
+}
+
+.faq .question {
+    padding: 15px 20px;
+    background: var(--secondary-color);
+    color: var(--color-two);
+    font-family: var(--headings-font);
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.faq .question:hover {
+    background: var(--color-one);
+}
+.faq .answer {
+  height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  transition: height 0.4s ease, padding 0.4s ease;
+}
+
+
+.faq.open .answer {
+    padding: 20px;
+    height: 80px;
+}
+/* End Faqs */

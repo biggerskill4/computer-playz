@@ -64,6 +64,7 @@ a {
     color: var(--color-two);
     background: var(--accent-color);
     font-size: 18px;
+    font-weight: 500;
     font-family: var(--headings-font);
     padding: 10px 20px;
     border-radius: 50px;
@@ -73,6 +74,7 @@ a {
 .cta:hover {
     background: var(--color-one);
     color: var(--color-two);
+    transform: translateY(-5px);
 }
 
 .cta-white {
@@ -120,10 +122,10 @@ a {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     padding: 15px;
-    text-align: center;
+    /* text-align: center; */
 }
 .productCard .prdInfo small {
     background: var(--secondary-color);
