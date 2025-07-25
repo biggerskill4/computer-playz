@@ -17,7 +17,7 @@ function renderSwiperProducts(category, swiperWrapperSelector, limit) {
                     <small>${product.category}</small>
                     <h3>${product.name}</h3>
                     <p class="price">PKR ${product.price.toLocaleString()}</p>
-                    <a href="/product.html?slug=${product.slug}" class="cta">Add to Cart</a>
+                    <a href="product.html?slug=${product.slug}" class="cta">Add to Cart</a>
                 </div>
             </div>
         `;
@@ -42,7 +42,7 @@ function renderGridProducts(category, containerSelector, limit) {
                 <small>${product.category}</small>
                 <h3>${product.name}</h3>
                 <p class="price">PKR ${product.price.toLocaleString()}</p>
-                <a href="/product.html?slug=${product.slug}" class="cta">Add to Cart</a>
+                <a href="product.html?slug=${product.slug}" class="cta">Add to Cart</a>
             </div>
         `;
         container.appendChild(card);
@@ -83,7 +83,7 @@ function renderGridMixProducts(category, containerSelector, limit) {
                 }</small>
                 <h3>${product.name}</h3>
                 <p class="price">PKR ${product.price.toLocaleString()}</p>
-                <a href="/product.html?slug=${product.slug}" class="cta">Add to Cart</a>
+                <a href="product.html?slug=${product.slug}" class="cta">Add to Cart</a>
             </div>
         `;
         container.appendChild(card);
