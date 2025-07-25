@@ -1,0 +1,72 @@
+footer {
+    width: 100%;
+    padding: 100px 10px 60px;
+    background: var(--color-one);
+    color: var(--color-two);
+}
+
+footer .row {
+    width: var(--max-width);
+    gap: 50px;
+    align-items: flex-start;
+}
+
+footer .logo {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer .logo ion-icon.md.hydrated {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+footer .logo .socialLinks {
+    display: flex;
+    gap: 20px;
+}
+
+footer .footerMenu {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .logo .heading {
+    font-size: 40px;
+    font-family: var(--headings-font);
+}
+
+
+footer .footerMenu .title {
+    font-size: 28px;
+    font-family: var(--headings-font);
+    font-weight: 500;
+}
+
+footer .footerMenu ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .footerMenu ul li a {
+    color: var(--color-two);
+}
+
+.copyright {
+    text-align: center;
+    background: var(--color-one);
+    color: var(--color-two);
+    width: 100%;
+}
+.copyright p {
+    width: var(--max-width);
+    border-top: 1px solid #ffffff42;
+    padding: 15px;
+    font-size: 16px;
+}

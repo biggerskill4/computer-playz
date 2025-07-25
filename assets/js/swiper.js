@@ -30,7 +30,6 @@ const categorySwiper = new Swiper(".categorySlide", {
 const productSwiper = new Swiper(".productSlide", {
     slidesPerView: 4,
     spaceBetween: 15,
-    loop: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,

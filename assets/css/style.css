@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Righteous&display=swap');
 @import url(header.css);
 @import url(main.css);
+@import url(footer.css);
 
 * {
     padding: 0;
@@ -106,39 +107,39 @@ a {
     background: var(--color-two);
     box-shadow: 0 0 10px #00000018;
     width: 100%;
+    transition: all 0.3s ;
 }
 
 .productCard .prdImage {
-    background: var(--secondary-color);
-    border-radius: 20px;
+    /* background: var(--secondary-color); */
+    /* border-radius: 20px; */
+    border-bottom: 1px solid #0000001c;
 }
 .productCard img {
     width: 100%;
-    height: 250px;
+    height: 200px;
     object-fit: contain;
+    padding: 10px;
 }
 
 .productCard .prdInfo {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    align-items: start;
+    gap: 5px;
+    align-items: center;
     justify-content: center;
-    padding: 15px;
-    /* text-align: center; */
+    padding: 15px 15px 10px;
+    position: relative;
+    text-align: center;
 }
 .productCard .prdInfo small {
-    background: var(--secondary-color);
-    color: var(--color-two);
-    border-radius: 50px;
-    padding: 5px;
+    color: var(--secondary-color);
+    border-radius: 50px;;
     cursor: pointer;
     transition: all 0.3s;
-    font-size: 12px;
-}
-
-.productCard .prdInfo small:hover {
-    background: var(--color-one);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--headings-font);
 }
 
 .productCard .prdInfo h3 {
@@ -147,8 +148,12 @@ a {
     overflow: hidden;
 }
 
-.productCard .prdInfo p {
-    font-size: 16px;
+.productCard .prdInfo .price {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--headings-font);
+    color: var(--secondary-color);
+    margin-bottom: 10px;
 }
 
 
