@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Title</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="flex">
+        <div class="row flex">
+            <div class="logo">
+                <h1><a href="/">Computer Playz</a></h1>
+            </div>
+            <div class="menu flex">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Categories <ion-icon name="chevron-down"></ion-icon></a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="rightheader flex">
+                <div class="search flex"><ion-icon name="search"></ion-icon></div>
+                <div class="cart flex"><span class="cartitem">0</span><ion-icon name="cart"></ion-icon></div>
+                <div class="user flex"><ion-icon name="person"></ion-icon></div>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+
+
+    <section class="singleProduct flex">
+        <div class="row flex">
+            <div class="productImage">
+                <img src="" alt="">
+            </div>
+            <div class="productInfo">
+                <div class="breadcrumbs">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><ion-icon name="chevron-forward"></ion-icon> Product</li>
+                        <li class="prdCategory"><ion-icon name="chevron-forward"></ion-icon> category</li>
+                        <li class="prdName"><ion-icon name="chevron-forward"></ion-icon> Product Name</li>
+                    </ul>
+                </div>
+                <div class="productTitle">
+                    <h1>Product Title</h1>
+                </div>
+                <div class="productRating">Rating 4.7</div>
+                <div class="productDiscription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eius? Vero cum aliquid minima illum commodi quisquam placeat sunt labore.</div>
+                <div class="productPrice">PKR 50000</div>
+                <div class="addToCart">
+                    <div class="quantity">
+                        <span>-</span>
+                    <input type="number" id="quantity" value="1" min="1">
+                    <span>+</span>
+                    </div>
+                    <a href="#" class="cta">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+    <!-- data -->
+    <script src="./assets/js/productdata.js"></script>
+    <!-- JS -->
+    <!-- <script src="./assets/js/script.js"></script> -->
+    <script src="./assets/js/product.js"></script>
+</body>
+
+</html>

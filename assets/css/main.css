@@ -280,3 +280,125 @@
     height: 80px;
 }
 /* End Faqs */
+
+
+
+
+
+/* for single product */
+
+.singleProduct {
+    width: 100%;
+    padding: 60px 10px;
+}
+
+.singleProduct .row {
+    width: var(--max-width);
+    gap: 30px;
+}
+
+.singleProduct .productImage {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #0000001c;
+    border-radius: 20px;
+    background: var(--color-two);
+    box-shadow: 0 0 10px #0000000c;
+}
+
+.singleProduct img {
+    width: 100%;
+}
+
+.singleProduct .productInfo {
+    width: 100%;
+}
+
+
+.singleProduct .productInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.singleProduct .breadcrumbs ul {
+    display: flex;
+    list-style-type: none;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.singleProduct .breadcrumbs ul li a {
+    color: var(--secondary-color);
+}
+
+.singleProduct .breadcrumbs ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.singleProduct .breadcrumbs ul li ion-icon.md.hydrated {
+    font-size: 12px;
+}
+
+.productInfo h1 {
+    font-size: 50px;
+}
+
+.productRating {
+    font-family: var(--headings-font);
+}
+
+.productPrice {
+    font-size: 30px;
+    font-family: var(--headings-font);
+    color: var(--secondary-color);
+}
+
+.addToCart {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.addToCart .quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.addToCart .quantity span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background: var(--color-one);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  user-select: none;
+  transition: background 0.2s ease;
+}
+
+.addToCart .quantity span:hover {
+  background: var(--secondary-color);
+}
+
+.addToCart .quantity input {
+  width: 50px;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
